@@ -1,0 +1,99 @@
+$date
+	Fri Apr 24 00:02:42 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module alu_2bit_tb $end
+$var wire 1 ! carry $end
+$var wire 2 " ALU_out [1:0] $end
+$var reg 2 # a [1:0] $end
+$var reg 2 $ b [1:0] $end
+$var reg 3 % opcode [2:0] $end
+$scope module DUT $end
+$var wire 2 & a [1:0] $end
+$var wire 2 ' b [1:0] $end
+$var wire 3 ( opcode [2:0] $end
+$var parameter 3 ) ADD $end
+$var parameter 3 * AND $end
+$var parameter 3 + OR $end
+$var parameter 3 , SUB $end
+$var parameter 3 - XOR $end
+$var reg 2 . ALU_out [1:0] $end
+$var reg 1 ! carry $end
+$var reg 3 / temp [2:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b100 -
+b1 ,
+b11 +
+b10 *
+b0 )
+$end
+#0
+$dumpvars
+b11 /
+b11 .
+b0 (
+b1 '
+b10 &
+b0 %
+b1 $
+b10 #
+b11 "
+0!
+$end
+#10
+1!
+b1 "
+b1 .
+b101 /
+b10 $
+b10 '
+b11 #
+b11 &
+#20
+1!
+b10 "
+b10 .
+b10 /
+b1 %
+b1 (
+b1 $
+b1 '
+#30
+0!
+b10 "
+b10 .
+b110 /
+b11 $
+b11 '
+b1 #
+b1 &
+#40
+b10 "
+b10 .
+b0 /
+b10 %
+b10 (
+b10 $
+b10 '
+b11 #
+b11 &
+#50
+b11 "
+b11 .
+b11 %
+b11 (
+#60
+b1 "
+b1 .
+b100 %
+b100 (
+#70
